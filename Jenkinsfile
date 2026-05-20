@@ -6,20 +6,16 @@ pipeline{
                 echo 'Compilando...'
             }
         }
-    }
-    stages{
         stage('Test'){
             steps{
                 echo 'Testando'
             }
         }
-    }
-    stages{
+
         stage('Deploy'){
             steps{
                 echo 'Deploy realizado com sucesso'
             }
         }
     }
-    
 }
